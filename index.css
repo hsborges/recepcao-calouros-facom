@@ -1,0 +1,133 @@
+html,
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.header img {
+  padding: 0 25px;
+  height: 100%;
+  width: auto;
+}
+
+.header img:last-child {
+  padding: 10px;
+  padding-right: 25px;
+}
+
+.welcome-message {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  margin-top: -35px;
+}
+
+.welcome-message *:not(:first-child) {
+  padding-top: 25px;
+}
+
+.welcome-message .welcome-message-main {
+  text-transform: uppercase;
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+.welcome-message .welcome-message-sub {
+  font-size: 1.15em;
+  font-weight: 200;
+}
+
+.welcome-message .welcome-message-menu {
+  padding-top: 25px;
+  font-size: 0.95em;
+}
+
+.welcome-message .welcome-message-menu * {
+  display: inline;
+  color: rgb(0, 146, 209);
+  font-weight: bold;
+  padding: 10px 15px 10px 10px;
+  width: 125px;
+  text-decoration: none;
+}
+
+.welcome-message .welcome-message-menu * .lni {
+  padding: 0 5px 0 0;
+  color: rgb(0, 146, 209);
+}
+
+#programacao {
+  margin-top: 25px;
+  padding-top: 25px;
+  display: flex;
+  justify-content: center;
+  background-color: #fbfbfb;
+}
+
+#programacao table thead th {
+  text-align: center;
+}
+
+#programacao table tbody td .meta {
+  padding: 5px 0;
+  font-size: 0.9em;
+}
+
+footer {
+  padding-top: 50px;
+  font-size: small;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(0, 146, 209);
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 0.9em;
+  }
+
+  .header {
+    height: 65px;
+    margin-top: 10px;
+  }
+
+  .welcome-message {
+    width: 90%;
+    margin-top: 25px;
+  }
+
+  .welcome-message .welcome-message-main {
+    text-transform: uppercase;
+    font-size: 1.75em;
+    font-weight: 700;
+  }
+
+  .welcome-message .welcome-message-sub {
+    font-size: 1em;
+    font-weight: 200;
+  }
+
+  .welcome-message .welcome-message-menu {
+    display: none;
+  }
+
+  #programacao table {
+    font-size: 0.9em;
+    width: 95%;
+    margin: auto;
+  }
+
+  #programacao table tbody .date {
+    transform: rotate(-90deg);
+  }
+}
