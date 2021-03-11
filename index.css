@@ -73,9 +73,11 @@ body {
   text-align: center;
 }
 
-#programacao table tbody td .meta {
-  padding: 5px 0;
-  font-size: 0.9em;
+#programacao table .meta {
+  padding: 10px 0;
+  text-align: center;
+  margin: auto;
+  font-weight: bold;
 }
 
 footer {
