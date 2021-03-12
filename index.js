@@ -12,8 +12,9 @@ const createReminderAnchor = ({ title, details, start, end }) => {
     const calendarStart = dateToCalendarDate(start)
     const calendarEnd = dateToCalendarDate(end)
     const reminderId = calendarStart + calendarEnd
+    const icon = window.localStorage.getItem(reminderId) === 'true' ? createSolidBellIcon(reminderId) : createBellIcon(reminderId)
 
-    return `<td><a onclick="toggleReminder('${reminderId}')" href="https://calendar.google.com/calendar/u/0/r/eventedit?text=${title}&details=${details}&dates=${calendarStart}/${calendarEnd}&ctz=America/Campo_Grande" target="_blank">${createBellIcon(reminderId)}</a></td>`
+    return `<td><a onclick="toggleReminder('${reminderId}')" href="https://calendar.google.com/calendar/u/0/r/eventedit?text=${title}&details=${details}&dates=${calendarStart}/${calendarEnd}&ctz=America/Campo_Grande" target="_blank">${icon}</a></td>`
 }
 
 // Troca o estado do botão de adicionar notificação
