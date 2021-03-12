@@ -74,7 +74,7 @@ const getDataFromEvent = (event) => {
 
   const date = isWithData && c1.innerHTML;
   const hour = isWithData ? c2.innerHTML : c1.innerHTML;
-  const title = isWithData ? c3.innerHTML : c2.innerHTML;
+  const title = isWithData ? c3.textContent : c2.textContent;
 
   return {
     courses,
