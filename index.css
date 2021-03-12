@@ -82,6 +82,14 @@ body {
   width: 50%;
 }
 
+#programacao table .sala-virtual {
+  padding: 10px 0;
+  text-align: center;
+  margin: auto;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
 #programacao table .meta {
   padding: 10px 0;
   text-align: center;
