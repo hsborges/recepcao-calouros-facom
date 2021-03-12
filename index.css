@@ -73,6 +73,15 @@ body {
   text-align: center;
 }
 
+#programacao table thead tr:nth-child(2) th:nth-child(1),
+#programacao table thead tr:nth-child(2) th:nth-child(5) {
+  width: 5%;
+}
+
+#programacao table thead tr:nth-child(2) th:nth-child(3) {
+  width: 50%;
+}
+
 #programacao table .meta {
   padding: 10px 0;
   text-align: center;
