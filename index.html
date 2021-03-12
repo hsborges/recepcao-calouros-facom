@@ -19,7 +19,7 @@
       integrity="sha384-LTIDeidl25h2dPxrB2Ekgc9c7sEC3CWGM6HeFmuDNUjX76Ert4Z4IY714dhZHPLd"
       crossorigin="anonymous"
     />
-    <script src="index.js"></script>
+    <script src="index.js" async defer></script>
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
@@ -42,108 +42,109 @@
       <table class="pure-table pure-table-horizontal pure-table-bordered">
         <thead>
           <tr>
-            <th colspan="4">Programação</th>
+            <th colspan="5">Programação</th>
           </tr>
           <tr>
-            <th>Data</th>
+            <th style="width: 5%">Data</th>
             <th>Hora</th>
-            <th>Atividade</th>
+            <th style="width: 50%">Atividade</th>
             <th>Cursos</th>
+            <th style="width: 5%"></th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td colspan="4" class="meta">
+            <td colspan="5" class="meta">
               Sala Virtual:
               <a href="https://meet.google.com/hks-iafq-dqn">
-                meet.google.com/hks-iafq-dqn
+                https://meet.google.com/hks-iafq-dqn
               </a>
             </td>
           </tr>
-          <tr>
+          <tr class="event">
             <td rowspan="5" class="date">15/03</td>
             <td>08:00</td>
             <td>Apresentação FACOM/Coordenadores</td>
             <td>EC e CC</td>
           </tr>
-          <tr>
+          <tr class="event">
             <td>09:30</td>
             <td>Ferramentas Institucionais / Ensino Remoto de Emergência</td>
             <td>EC e CC</td>
           </tr>
-          <tr>
+          <tr class="event">
             <td>13:30</td>
             <td>Apresentação FACOM/Coordenadores</td>
             <td>ES</td>
           </tr>
-          <tr>
+          <tr class="event">
             <td>18:30</td>
             <td>Apresentação FACOM/Coordenadores</td>
             <td>SI</td>
           </tr>
-          <tr>
+          <tr class="event">
             <td>20:00</td>
             <td>Ferramentas Institucionais / Ensino Remoto de Emergência</td>
             <td>ES e SI</td>
           </tr>
-          <tr>
+          <tr class="event">
             <td rowspan="6" class="date">16/03</td>
             <td>08:00</td>
             <td>Grupos PET</td>
             <td rowspan="3">EC e CC</td>
           </tr>
-          <tr>
+          <tr class="event">
             <td>09:00</td>
             <td>Atlética / Mega</td>
           </tr>
-          <tr>
+          <tr class="event">
             <td>10:00</td>
             <td>Laboratórios</td>
           </tr>
-          <tr>
+          <tr class="event">
             <td>18:00</td>
             <td>Grupos PET</td>
             <td rowspan="3">ES e SI</td>
           </tr>
-          <tr>
+          <tr class="event">
             <td>19:00</td>
             <td>Atlética / Mega</td>
           </tr>
-          <tr>
+          <tr class="event">
             <td>20:00</td>
             <td>Laboratórios</td>
           </tr>
-          <tr>
+          <tr class="event">
             <td rowspan="3" class="date">17/03</td>
             <td>08:00</td>
             <td>Computação (prof. Edson Cáceres)</td>
             <td rowspan="3">Todos</td>
           </tr>
-          <tr>
+          <tr class="event">
             <td>09:00</td>
             <td>Pesquisa (prof. Edson Takashi)</td>
           </tr>
-          <tr>
+          <tr class="event">
             <td>10:00</td>
             <td>Estágios (profa. Jucele)</td>
           </tr>
-          <tr>
+          <tr class="event">
             <td rowspan="2" class="date">18/03</td>
             <td>08:00</td>
             <td>Liga Acadêmica (prof. Amaury)</td>
             <td rowspan="2">Todos</td>
           </tr>
-          <tr>
+          <tr class="event">
             <td>09:00</td>
             <td>SBC (profa. Valéria)</td>
           </tr>
-          <tr>
+          <tr class="event">
             <td rowspan="2" class="date">19/03</td>
             <td>16:00</td>
             <td>Oficinas (PETs)</td>
             <td rowspan="2">Todos</td>
           </tr>
-          <tr>
+          <tr class="event">
             <td>18:00</td>
             <td>Atividades Recreativas</td>
           </tr>
@@ -151,7 +152,7 @@
       </table>
     </section>
     <section id="links">
-      <span class="links-title">Links Úteis</span>
+      <span class="links-title">Links Importantes</span>
       <ul>
         <li>
           Passaporte UFMS:
