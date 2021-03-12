@@ -98,6 +98,16 @@ body {
   font-size: 0.8em;
 }
 
+#programacao table tfoot td {
+  width: 90%;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+#programacao table tfoot td a {
+  line-height: 1.5em;
+}
+
 #links {
   margin-top: 25px;
   padding-top: 25px;
