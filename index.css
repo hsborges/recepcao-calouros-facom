@@ -62,9 +62,23 @@ body {
   color: rgb(0, 146, 209);
 }
 
+.atencao {
+  padding-top: 25px;
+  width: 50%;
+  margin: auto;
+  display: flex;
+}
+
+.atencao > strong {
+  color: red;
+}
+
+.atencao span {
+  text-align: center;
+}
+
 #programacao {
   margin-top: 25px;
-  padding-top: 25px;
   display: flex;
   justify-content: center;
 }
@@ -171,6 +185,10 @@ footer a {
 
   .welcome-message .welcome-message-menu {
     padding-top: 15px;
+  }
+
+  .atencao {
+    width: 90%;
   }
 
   #programacao {
